@@ -120,3 +120,42 @@ steps
 
 1.) <h1 className="text-6xl italic underline">font-family: "Raleway", sans-serif;</h1>
        <h1 className="font-signatureFont text-7xl">hello this </h1>
+
+
+
+
+
+
+
+
+
+
+
+NOw we looping a array with have nav bar href 
+const links = [
+    {
+      id: 1,
+      link: "/",
+      linkname: "home",
+    },
+    {
+      id: 2,
+      link: "/",
+      linkname: "about",
+    },
+    {
+      id: 3,
+      link: "/",
+      linkname: "services",
+    },
+  ];
+
+ <ul className="flex ">
+        {/* we makke a loop and we loop over the array of obj using dstructure ad normal way first one is normal way */}
+        {links.map((link) => (
+          <li key={link.id}  className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200'>{link.linkname}</li>
+        ))}
+      </ul>
+
+
+      like this 
