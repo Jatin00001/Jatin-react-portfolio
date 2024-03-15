@@ -17,7 +17,7 @@ const Navbar = () => {
     {
       id: 3,
       link: "/",
-      linkname: "services",
+      linkname: "Portfolio",
     },
   ];
   return (
