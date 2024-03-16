@@ -21,7 +21,7 @@ const Contact = () => {
                   type="text"
                   placeholder="Your name"
                   name="name"
-                  className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-gray-600 placeholder-gray-400 bg-transparent border-2 rounded shadow outline-none"
+                  className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-white placeholder-gray-200 bg-transparent border-2 rounded shadow outline-none"
                   required
                 />
               </div>
@@ -30,7 +30,7 @@ const Contact = () => {
                   type="email"
                   placeholder="Email"
                   name="email"
-                  className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-gray-600 placeholder-gray-400 bg-transparent border-2 rounded shadow outline-none"
+                  className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-white placeholder-gray-200 bg-transparent border-2 rounded shadow outline-none"
                   required
                 />
               </div>
@@ -39,7 +39,7 @@ const Contact = () => {
                   placeholder="Your message"
                   rows={6}
                   name="message"
-                  className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-gray-600 placeholder-gray-400 bg-transparent border-2 rounded shadow outline-none"
+                  className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-white placeholder-gray-200 bg-transparent border-2 rounded shadow outline-none"
                   required
                 />
               </div>
