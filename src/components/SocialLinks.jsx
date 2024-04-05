@@ -8,18 +8,18 @@ const SocialLinks = () => {
         {
             id : '1',
             child : ( <>LinkedIn<FaLinkedin size={30}/> </>),
-            href :'https://linkedin.com',
+            href :'https://www.linkedin.com/in/jatin-chaudhary-70262521b/',
             style : 'rounded-tr-md',
         },
         {
             id : '2',
             child : ( <>Github<FaGithub size={30}/> </>),
-            href :'https://Github.com',
+            href :'https://github.com/Jatin00001',
         },
         {
             id : '3',
             child : ( <>Mail<HiOutlineMail size={30}/> </>),
-            href :'mailto:foo@gmail.com',
+            href :'mailto:datajatin90@gmail.com',
         },
         {
             id : '4',
