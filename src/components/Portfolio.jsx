@@ -9,14 +9,15 @@ const Portfolio = () => {
     {
       id: 1,
       src: projectone,
-      links: "/",
-      Demo : ""
+      links: "https://github.com/Jatin00001/TextUtils-Reactjs-Jatin",
+      Demo : "Demo",
+      DemoLink :"https://jatintextutils-10.netlify.app/"
     },
     {
       id: 2,
      src: flask,
       links: "https://github.com/Jatin00001/flask-app-jatin",
-      Demo : "Demo"
+      Demo : "Demo",
     },
     {
       id: 3,
@@ -57,7 +58,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-3 md:grid-cols-3 gap-8 px-12 sm:p-0">
-          {projects.map(({ id, src , links ,Demo }) => (
+          {projects.map(({ id, src , links ,Demo,DemoLink }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -65,9 +66,10 @@ const Portfolio = () => {
                 className="rounded-md hover:scale-105 duration-200"
               />
               <div className="flex items-center justify-center">
-                <a href={links} target="_blank" rel="noreferrer" ><button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200">
+                <a href={DemoLink ? DemoLink : links} target="_blank" rel="noreferrer" ><button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200">
                   {Demo}
                 </button></a>
+                
                 <a href={links} target="_blank" rel="noreferrer"  ><button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200">
                   Code
                 </button></a>
