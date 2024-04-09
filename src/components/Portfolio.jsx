@@ -1,37 +1,46 @@
 import React from "react";
 import projectone from "../assets/portFolio/project1.png";
+import flask from "../assets/portFolio/flask-image.png";
+import webdesign from "../assets/portFolio/web-design.png";
+import javaimg from "../assets/portFolio/Java-Mysql1.jpg";
+import DSAIMG from "../assets/portFolio/dsaimage.jpg";
 const Portfolio = () => {
   const projects = [
     {
       id: 1,
       src: projectone,
       links: "/",
+      Demo : ""
     },
     {
       id: 2,
-     src: projectone,
-      links: "/",
+     src: flask,
+      links: "https://github.com/Jatin00001/flask-app-jatin",
+      Demo : "Demo"
     },
     {
       id: 3,
-     src: projectone,
+     src: webdesign,
       links: "/",
+      Demo : "Demo"
     },
     {
       id: 4,
-     src: projectone,
-      links: "/",
+     src: javaimg,
+      links: "https://github.com/Jatin00001/ATM-Simulator-/tree/main",
+      Demo : "Demo"
     },
     {
       id: 5,
-     src: projectone,
-      links: "/",
+     src: DSAIMG,
+      links: "https://github.com/Jatin00001/c-_test",
+      Demo : "Demo"
     },
-    {
-      id: 6,
-     src: projectone,
-      links: "/",
-    },
+    // {
+    //   id: 6,
+    //  src: projectone,
+    //   links: "/",
+    // },
   ]
 
   return (
@@ -48,7 +57,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-3 md:grid-cols-3 gap-8 px-12 sm:p-0">
-          {projects.map(({ id, src }) => (
+          {projects.map(({ id, src , links ,Demo }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -56,12 +65,12 @@ const Portfolio = () => {
                 className="rounded-md hover:scale-105 duration-200"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200">
-                  Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200">
+                <a href={links} target="_blank" rel="noreferrer" ><button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200">
+                  {Demo}
+                </button></a>
+                <a href={links} target="_blank" rel="noreferrer"  ><button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200">
                   Code
-                </button>
+                </button></a>
               </div>
             </div>
           ))}
